@@ -11,7 +11,7 @@ class Menu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Material(
-        color: Color.fromARGB(255, 58, 176, 255),
+        color: Theme.of(context).primaryColor , 
         child: ListView(
           children: [
             InkWell(
