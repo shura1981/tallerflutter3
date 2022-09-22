@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/responsive/responsive.dart';
+
 class MediaQueryOrientation extends StatelessWidget {
   const MediaQueryOrientation({Key? key}) : super(key: key);
   final TextStyle style = const TextStyle(color: Colors.white, fontSize: 20);
@@ -7,8 +9,11 @@ class MediaQueryOrientation extends StatelessWidget {
   Widget build(BuildContext context) {
     //  return MediaQuerySafffold(style: style);
     // return MyorientationBuilder(style: style);
-    return MyorientationBuilder2(style: style);
-
+    // return MyorientationBuilder2(style: style);
+    return const ResponsiveLayout(
+      mobileBody: MobileBody(),
+      tabletBody: DesktopBody(),
+    );
     // return const MediaQuerySafffold2();
   }
 }

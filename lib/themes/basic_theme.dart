@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AppBasicTheme {
   //Theme Light
   static const Color lightPrimaryColorLight = Colors.black;
-  static const Color lightPrimaryColor = Colors.purpleAccent;
+  static const Color lightPrimaryColor = Colors.purple;
   static const Color lightscaffoldBackgroundColor = Colors.white;
 
   static final ThemeData lightTheme = ThemeData.light().copyWith(
