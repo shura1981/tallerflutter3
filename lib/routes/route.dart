@@ -12,7 +12,9 @@ class AppRoute {
       'barnav': (context) => const NavigationBarScreen(),
       'bottomsheet': (context) => const MyBottomSheet(),
       'expansiontitle': (context) => const MyExpansionTile(),
-      'infinitys': (context) => const InfintyScroll()
+      'preferences': (context) => const Preferencies(),
+      'infinitys': (context) => const InfintyScroll(),
+      'mediaquery1': (context) => const MediaQueryOrientation(),
     };
   }
 }

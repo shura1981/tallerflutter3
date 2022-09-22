@@ -5,3 +5,5 @@ export 'textfileds.dart';
 export 'bottomsheet.dart';
 export 'expansiontile.dart';
 export 'infinityscroll.dart';
+export 'preferencieuser.dart';
+export 'mediaqueryorientation.dart';

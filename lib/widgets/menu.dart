@@ -11,11 +11,11 @@ class Menu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Material(
-        color: Theme.of(context).primaryColor , 
+        color: Theme.of(context).primaryColor,
         child: ListView(
           children: [
             InkWell(
-              splashColor: Color.fromARGB(255, 211, 211, 211),
+              splashColor: const Color.fromARGB(255, 211, 211, 211),
               onTap: (() => print("tap")),
               child: Column(
                 children: [
@@ -48,31 +48,31 @@ class Menu extends StatelessWidget {
               ),
             ),
             MenuItem(
-              color: Color.fromARGB(255, 255, 255, 255),
+              color: const Color.fromARGB(255, 255, 255, 255),
               icon: Icons.input_outlined,
               text: "TextFilds",
               onPressed: () => _go(context, 'textfields'),
             ),
             MenuItem(
-              color: Color.fromARGB(255, 255, 255, 255),
+              color: const Color.fromARGB(255, 255, 255, 255),
               icon: Icons.access_alarms,
               text: "Streams",
               onPressed: () => _go(context, 'stream'),
             ),
             MenuItem(
-              color: Color.fromARGB(255, 255, 255, 255),
+              color: const Color.fromARGB(255, 255, 255, 255),
               icon: Icons.card_giftcard_rounded,
               text: "BottomSheet",
               onPressed: () => _go(context, 'bottomsheet'),
             ),
             MenuItem(
-              color: Color.fromARGB(255, 255, 255, 255),
+              color: const Color.fromARGB(255, 255, 255, 255),
               icon: Icons.navigation,
               text: "Navigation Bar",
               onPressed: () => _go(context, 'barnav'),
             ),
             MenuItem(
-              color: Color.fromARGB(255, 255, 255, 255),
+              color: const Color.fromARGB(255, 255, 255, 255),
               icon: Icons.compass_calibration_outlined,
               text: "Expansion Tile",
               onPressed: () {
@@ -87,24 +87,28 @@ class Menu extends StatelessWidget {
               height: 20,
             ),
             MenuItem(
-              color: Color.fromARGB(255, 255, 255, 255),
+              color: const Color.fromARGB(255, 255, 255, 255),
               icon: Icons.list_alt_outlined,
               text: "Infinity Scroll",
               onPressed: () {
-                 _go(context, 'infinitys');
+                _go(context, 'infinitys');
               },
             ),
             MenuItem(
-              color: Color.fromARGB(255, 255, 255, 255),
-              icon: Icons.access_alarms,
-              text: "Streams",
-              onPressed: () {},
+              color: const Color.fromARGB(255, 255, 255, 255),
+              icon: Icons.settings_accessibility_outlined,
+              text: "Preferencias",
+              onPressed: () {
+                _go(context, 'preferences');
+              },
             ),
             MenuItem(
-              color: Color.fromARGB(255, 255, 255, 255),
-              icon: Icons.access_alarms,
-              text: "Streams",
-              onPressed: () {},
+              color: const Color.fromARGB(255, 255, 255, 255),
+              icon: Icons.screen_lock_landscape_outlined,
+              text: "Media Query Orientation",
+              onPressed: () {
+                   _go(context, 'mediaquery1');
+              },
             ),
             MenuItem(
               color: Colors.blue,

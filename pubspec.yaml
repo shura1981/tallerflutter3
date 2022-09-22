@@ -39,7 +39,8 @@ dependencies:
   provider:
   audioplayers: ^1.0.1
   http:
-
+  flutter_secure_storage: ^4.2.0
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
