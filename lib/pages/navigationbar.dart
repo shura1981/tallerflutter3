@@ -29,7 +29,7 @@ class _NavigationBarScreenState extends State<NavigationBarScreen> {
       decoration: BoxDecoration(
           image: DecorationImage(
               image: Image.asset('assets/blurhombre.jpg').image,
-              fit: BoxFit.cover)),
+              fit: BoxFit.fill)),
       child: const Center(
           child: Text(
         'Chat',

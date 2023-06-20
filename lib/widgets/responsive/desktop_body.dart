@@ -20,7 +20,7 @@ class DesktopBody extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: AspectRatio(
-                    aspectRatio: 16 / 9,
+                    aspectRatio: 16 / 8,
                     child: Container(
                       color: Colors.deepPurple[400],
                     ),
